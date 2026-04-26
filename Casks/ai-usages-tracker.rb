@@ -1,6 +1,6 @@
 cask "ai-usages-tracker" do
-  version "0.0.1"
-  sha256 "97656a94922c6fa9b7e0ba20337a26592074db031b9c7be35ac965726dc15d80"
+  version "0.1.0"
+  sha256 "87754d52a3bba0c9225a0fe368d28ce47add98d3577210cbfe154670dff2838b"
 
   url "https://github.com/fcamblor/mac-ai-trackers/releases/download/v#{version}/AI-Usages-Tracker.zip"
   name "AI Usages Tracker"

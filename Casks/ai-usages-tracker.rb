@@ -13,9 +13,9 @@ cask "ai-usages-tracker" do
   # account). macOS Sequoia blocks quarantined ad-hoc binaries by default.
   # Stripping the quarantine attribute after install lets the app launch
   # cleanly — safe because the user explicitly opted in by running `brew install`.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/AI Usages Tracker.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/AI Usages Tracker.app"]
   end
 
   zap trash: [
